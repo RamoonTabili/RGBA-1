@@ -69,9 +69,9 @@ public class RGBAModel extends Observable {
     // GETTERS
     public Integer getAlpha() { return alpha; }
     public Integer getBlue()  { return blue; }
-    public int     getColor() { return Color.argb( alpha, red, green, blue ); }
     public Integer getGreen() { return green; }
     public Integer getRed()   { return red; }
+    public int     getColor() { return Color.argb( alpha, red, green, blue ); }
 
     // SETTERS
     public void setAlpha( Integer alpha ) {
@@ -107,13 +107,6 @@ public class RGBAModel extends Observable {
         this.updateObservers();
     }
 
-    // the model has changed!
-    // broadcast the update method to all registered observers
-    private void updateObservers() {
-        this.setChanged();
-        this.notifyObservers();
-    }
-
     @Override
     public String toString() {
         return "RGB-A [r=" + red + " g=" + green + " b=" + blue + " alpha=" + alpha + "]";
@@ -124,5 +117,12 @@ public class RGBAModel extends Observable {
         RGBAModel model = new RGBAModel( 127, 127, 127, 255 );
 
         System.out.println( model );
+    }
+
+    // the model has changed!
+    // broadcast the update method to all registered observers
+    private void updateObservers() {
+        this.setChanged();
+        this.notifyObservers();
     }
 }

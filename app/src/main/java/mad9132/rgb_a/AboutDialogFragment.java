@@ -8,8 +8,6 @@ import android.os.Bundle;
 
 /**
  * Create an AboutDialogFragment displaying your full name and username.
- *
- * TODO all students: please read the following documentation to learn about Dialogs.
  * Reference:
  * Android Dialogs @ http://developer.android.com/guide/topics/ui/dialogs.html
  *
@@ -21,9 +19,7 @@ public class AboutDialogFragment extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         // Use the Builder class for convenient dialog construction
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        //TODO pro-tip: cascading messages
         builder.setTitle(R.string.action_about)
-                //TODO replace with your name + userID
                 .setMessage(R.string.author)
                 .setCancelable(false)
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {

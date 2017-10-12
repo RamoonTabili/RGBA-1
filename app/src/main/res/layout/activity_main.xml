@@ -15,11 +15,10 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/colorSwatch"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentStart="true"
         android:height="200dp"
-        android:background="#000" />
+        android:background="#000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,33 +27,72 @@
         android:text="@string/red"
         android:id="@+id/red"
         android:labelFor="@+id/redSB"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/colorSwatch" />
+        android:layout_above="@+id/redSB"
+        android:layout_alignParentStart="true" />
 
     <SeekBar
+        android:id="@+id/redSB"
         android:layout_width="fill_parent"
         android:layout_height="30dp"
-        android:id="@+id/redSB"
-        android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
-        android:max="255"
-        android:layout_below="@id/red" />
+        android:layout_centerVertical="true"
+        android:max="255" />
 
     <TextView
+        android:id="@+id/green"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/green"
-        android:id="@+id/green"
         android:labelFor="@+id/greenSB"
+        android:text="@string/green"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="13dp"
         android:layout_below="@+id/redSB"
         android:layout_alignParentStart="true" />
 
-    <!--TODO: SeekBar for green -->
+    <SeekBar
+        android:id="@+id/greenSB"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:max="255"
+        android:layout_below="@+id/green"
+        android:layout_alignParentStart="true" />
 
-    <!--TODO: TextView for blue -->
-    <!--TODO: SeekBar for blue -->
+    <TextView
+        android:id="@+id/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/greenSB"
+        android:text="@string/blue"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/greenSB"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
 
-    <!--TODO: TextView for alpha -->
-    <!--TODO: SeekBar for alpha -->
+    <SeekBar
+        android:id="@+id/blueSB"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:max="255"
+        android:layout_below="@+id/blue"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/greenSB"
+        android:text="@string/alpha"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/blueSB"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:id="@+id/alphaSB"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:max="255"
+        android:layout_below="@+id/alpha"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

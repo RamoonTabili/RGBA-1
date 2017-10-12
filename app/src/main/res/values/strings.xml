@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">RGB-A (MVC)</string>
     <string name="action_about">About</string>
-    <!-- TODO: replace your name -->
-    <string name="author" translatable="false">Gerry Hurdle (hurdleg)</string>
+    <string name="author" translatable="false">Ramon Tabilin (tabi0011)</string>
     <string name="alpha">Transparency (Alpha)</string>
     <string name="black">Black</string>
     <string name="blue">Blue</string>
@@ -13,4 +12,7 @@
     <string name="white">White</string>
     <string name="yellow">Yellow</string>
     <string name="redProgress">Red: %1d</string>
+    <string name="greenProgress">Green: %1d</string>
+    <string name="blueProgress">Blue: %1d</string>
+    <string name="alphaProgress">Alpha: %1d</string>
 </resources>
